@@ -19,7 +19,8 @@ Esse é mais simples, a ideia é criar um programa que recebe N pontos (latitude
 
 - Instruções
 
-O controller pega todas as informações dos pontos de dentro do arquivo input.file. O arquivo começa com o nome do ponto e vem seguido das coordenadas geograficas (grau, minuto segundo) e direção da latitude e longitude, respectivamente
+O controller pega todas as informações dos pontos de dentro do arquivo input.file. O arquivo começa com o nome do ponto e vem seguido das coordenadas geograficas (grau, minuto segundo) e direção da latitude e longitude, respectivamente.
+
 Ex
 Ponto1 40 30 30 'S' 40 30 30 'W'
 Ponto2 39 30 30 'S' 40 30 30 'W'
@@ -28,7 +29,9 @@ Ponto4 28 45 12 'N' 10 12 21 'E'
 Ponto5 28 50 12 'N' 10 12 21 'E'
 
 Basta executar a classe calculate_distance_controller.rb para calcular tudo.
+
 O programa retorna o arquivo output.file com todas as quilometragens calculadas. O arquivo retorna os nomes dos pontos com a quilometragem.
+
 Ex: 
 Ponto1 Ponto2 111.19492664455873
 Ponto1 Ponto3 7609.130822571531
