@@ -23,9 +23,13 @@ O controller pega todas as informações dos pontos de dentro do arquivo input.f
 
 Ex
 Ponto1 40 30 30 'S' 40 30 30 'W'
+
 Ponto2 39 30 30 'S' 40 30 30 'W'
+
 Ponto3 27 30 30 'N' 32 25 12 'W'
+
 Ponto4 28 45 12 'N' 10 12 21 'E'
+
 Ponto5 28 50 12 'N' 10 12 21 'E'
 
 Basta executar a classe calculate_distance_controller.rb para calcular tudo.
@@ -34,9 +38,13 @@ O programa retorna o arquivo output.file com todas as quilometragens calculadas.
 
 Ex: 
 Ponto1 Ponto2 111.19492664455873
+
 Ponto1 Ponto3 7609.130822571531
+
 Ponto1 Ponto4 9307.88973058297
+
 Ponto1 Ponto5 9315.357700537821
+
 Ponto2 Ponto3 7498.948635746562
 Ponto2 Ponto4 9226.688941760605
 Ponto2 Ponto5 9234.090557303092
