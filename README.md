@@ -12,14 +12,29 @@ Por sorte, ele conseguiu, no caminho, comprar duas ampulhetas de durações dife
 
 Faça um programa que, dado o tempo de preparo do miojo, e os tempos das duas ampulhetas (ambos maiores que o tempo do miojo), determina o tempo mínimo necessário para o miojo ficar pronto ou se não é possível cozinhar o miojo no tempo exato com as ampulhetas disponíveis.
 
+- Instruções
 
+Rode o programa calculate_noodies_time.rb.
+Dentro do arquivo tem a chamada para executar a solução. Basta passar os valores que queira testar:
+
+-noodleTime -> tempo de preparo do miojo
+
+-hourGlass1 -> ampulheta 1
+
+-hourGlass2 -> ampulheta 2
+
+O resultado é o tempo total que se gasta para poder preparar o miojo.
 
 # Distancia entre Pontos
 Esse é mais simples, a ideia é criar um programa que recebe N pontos (latitude e longitude) e retorna a distancia entre eles, ou seja a distancia do primeiro ponto para todos os outros pontos, do segundo ponto para todos os outros pontos…e assim por diante...
 
 - Instruções
 
-O controller pega todas as informações dos pontos de dentro do arquivo input.file. O arquivo começa com o nome do ponto e vem seguido das coordenadas geograficas (grau, minuto segundo) e direção da latitude e longitude, respectivamente.
+O projeto é dividido em controller, service e model. 
+
+No service está a lógica. Existem duas classes lá. Uma pra calcular a coordenada geográfica, outra pra calcular a distância entre dois pontos.
+
+O controller pega todas as informações dos pontos de dentro do arquivo input.file. Esse arquivo começa com o nome do ponto e vem seguido das coordenadas geograficas (grau, minuto segundo) e direção da latitude e longitude, respectivamente.
 
 Ex:
 
@@ -59,4 +74,4 @@ Ponto3 Ponto5 4158.3001938364005
 
 Ponto4 Ponto5 9.26624388704643
 
-
+Os arquivos ficam na pasta file na mesma hierarquia da pasta app.
