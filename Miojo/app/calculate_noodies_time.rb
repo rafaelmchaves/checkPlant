@@ -1,13 +1,14 @@
 class CalculateNoodiesTime
 
-  def calculate(noodieTime, hourGlass1, hourGlass2)
+  def calculate(noodlesTime, hourGlass1, hourGlass2)
 
     totalTime = 0
     auxHourGlass1 = hourGlass1
     auxHourGlass2 = hourGlass2
 
-    difference = 1
-    while(difference != 0 || difference == noodieTime)
+    difference = nil
+    #se for zero é porque não tem solução. Vai reiniciar a mesma contagem.
+    while(difference != 0)
       if(auxHourGlass1 > auxHourGlass2)
         difference = auxHourGlass1 - auxHourGlass2
         totalTime += auxHourGlass2
@@ -20,16 +21,19 @@ class CalculateNoodiesTime
         auxHourGlass1 = hourGlass1
       end
 
-      if (difference == noodieTime)
-        totalTime += noodieTime
+      if (difference == noodlesTime)
+        totalTime += noodlesTime
         return totalTime
       end
     end
-    return 0
+    return "Não é possível cozinhar no tempo exato"
   end
 
 end
 
 calculateNoodiesTime = CalculateNoodiesTime.new
+puts calculateNoodiesTime.calculate(3, 5,7)
+puts calculateNoodiesTime.calculate(3, 4,6)
 puts calculateNoodiesTime.calculate(3, 7,12)
+puts calculateNoodiesTime.calculate(5, 11,18)
 

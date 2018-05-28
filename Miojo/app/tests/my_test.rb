@@ -3,22 +3,8 @@ require 'test/unit/ui/console/testrunner'
 
 class MyTest < Test::Unit::TestCase
 
-  # Called before every test method runs. Can be used
-  # to set up fixture information.
-  def setup
-    # Do nothing
-  end
-
-  # Called after every test method runs. Can be used to tear
-  # down fixture information.
-
-  def teardown
-    # Do nothing
-  end
-
-  # Fake test
-  def test
-
-    assert(true, true)
+  def test_miojo
+    result = CalculateNoodiesTime.new.calculate(3, 5,7)
+    assert(result, 10)
   end
 end
